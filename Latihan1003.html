@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Manipulasi Dokumen html</title>
+</head>
+<body>
+    
+    <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, consequatur! Natus, sint. Ducimus deserunt sint illo? Obcaecati vero nulla eligendi fugit dignissimos et voluptas debitis, voluptatem optio consequatur soluta inventore eaque iure rerum minima eveniet, illum temporibus rem. Earum est, similique asperiores rerum obcaecati, odit id ratione beatae exercitationem amet ullam perspiciatis nulla ea perferendis. Veritatis voluptatem dolorum aliquam eos quibusdam sapiente alias temporibus est, libero incidunt eius blanditiis, aliquid numquam eum odio in ea, laborum dolor nulla recusandae nesciunt dignissimos fugit? Et voluptatum reprehenderit voluptate sint nobis consequuntur. Sequi, expedita! Tenetur, fugit laudantium dicta iusto a nobis perspiciatis voluptates quasi, laboriosam cum nulla similique deleniti distinctio ex dolorem vero exercitationem asperiores eligendi repudiandae? Sunt deleniti, consequatur minus commodi quas provident architecto. Maxime ipsam veritatis officia dignissimos eos eum cum mollitia saepe natus! Beatae adipisci, voluptas, consequuntur minima debitis, dolorum deserunt aliquam fugiat consectetur autem voluptatem earum! Quas ex provident, tenetur qui nulla quia quo pariatur harum illum ea fugit perferendis! Earum, delectus nam cum quam ad impedit cupiditate eveniet non eum in dolore numquam ab labore ducimus et repellat facilis sunt a quas obcaecati dolor sapiente ullam quis. Debitis, necessitatibus excepturi. Officia, impedit veritatis libero modi laudantium porro unde vitae. Fugit commodi maxime excepturi minus omnis quos eius nihil doloribus dicta doloremque fuga tempora, nesciunt neque nemo quis illum ipsam reiciendis beatae iure unde ab, obcaecati quidem eos impedit! Quasi itaque possimus, perferendis eligendi atque mollitia, minus sint incidunt odit est veniam sit culpa, aut qui nisi sed cum?
+    </p>
+    <button class="cmdTampil">Tampilkan Teks</button>
+    
+
+    <script src="Jquery/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function(){
+        $('.cmdTampil').hide()
+        $('p').on('click',function(){
+            $(this).hide(500)
+            $('.cmdTampil').show()
+        })
+        $('.cmdTampil').on('click',function(){
+            $('p').show(1000)
+            $(this).hide()
+        })
+      })
+    </script>
+</body>
+</html>
